@@ -17,7 +17,7 @@ A simple and well structured boilerplate project based on AngularJS and Zurb's F
 * [Protractor](https://angular.github.io/protractor/#/)  end-to-end test framework
 
 ## Live Demo
-To be added
+To be added...
 
 ## Setup
 1. Install [Git](https://git-scm.com/downloads) and [NodeJS](http://nodejs.org/)
