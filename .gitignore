@@ -6,7 +6,6 @@ junit-report.xml
 tmp/
 build/
 public/
-production/
 node_modules/
 reports/
 coverage/
