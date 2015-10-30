@@ -1,0 +1,6 @@
+<!-- For medium/large screens, show the topbar and main content area -->
+<div class="show-for-medium-up" ng-include="'topbar/views/topbar.tpl.html'"></div>
+<div class="show-for-medium-up" ui-view>UI VIew</div>
+
+<!-- For small screens, show the tabbar, which is like the topbar but it has a popout off canvas menu -->
+<div class="show-for-small" ng-include="'topbar/views/tabbar.tpl.html'"></div>

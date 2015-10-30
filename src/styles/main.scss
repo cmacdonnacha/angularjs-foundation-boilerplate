@@ -1,0 +1,13 @@
+// Include global Sass files needed to style the app. You shouldn't have to change anything here.
+@import "../../vendor/foundation/scss/normalize";
+@import "settings";
+@import "../../vendor/foundation/scss/foundation";
+@import "font-awesome";
+@import "mixins";
+@import "shared";
+
+// Include custom styles per component. If you add a new component, you should the path to its styles file here.
+@import "../app/about/styles/styles";
+@import "../app/home/styles/styles";
+@import "../app/layout/styles/styles";
+@import "../app/topbar/styles/styles";

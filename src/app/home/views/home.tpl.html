@@ -1,0 +1,49 @@
+<div ng-controller="HomeCtrl">
+  <div class="row">
+    <div class="large-12 columns text-center">
+      <h2 >Behold, a Foundation AngularJS app!</h2>
+      <p class="sub-headline">{{homepageMessage}}</p>
+      <hr>
+
+      <div class="row">
+        <ul class="small-block-grid-1 large-block-grid-3">
+          <li>
+            <div class="panel">
+              <h4>Foundation 5</h4>
+              <ul class="no-bullet" ng-repeat="item in foundationItems">
+                <li><a href={{item.link}}>{{item.title}}</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="panel">
+              <h4>Sass</h4>
+              <ul class="no-bullet">
+                <li><a href="http://sass-lang.com/guide">The Basics</a></li>
+                <li><a href="http://webdesign.tutsplus.com/tutorials/quick-tip-name-your-sass-variables-modularly--webdesign-13364">Naming Sass Variables</a></li>
+                <li><a href="http://sass-guidelin.es/#introduction">Styleguide</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="panel">
+              <h4>AngularJS</h4>
+              <ul class="no-bullet">
+                <li><a href="https://github.com/jmcunningham/AngularJS-Learning">Learning Resources</a></li>
+                <li><a href="https://scotch.io/tutorials/angular-routing-using-ui-router">UI Router</a></li>
+                <li><a href="https://github.com/johnpapa/angular-styleguide">Styleguide</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <div class="row">
+          <div class="large-12 columns text-center">
+            <img class="img-circle-yeti" src="assets/foundation-yeti.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

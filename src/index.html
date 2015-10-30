@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="angularjs-foundation-boilerplate">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/ico" href="assets/images/foundation-fav-icon.ico"/>
+
+  <!-- Page title set using the pageTitle directive -->
+  <title>AngularJS Foundation Boilerplate</title>
+
+  <!-- compiled CSS -->
+  <% styles.forEach( function ( file ) { %>
+  <link rel="stylesheet" type="text/css" href="<%= file %>"/>
+  <% }); %>
+
+</head>
+
+<body>
+
+<div ng-include="'layout/views/layout.tpl.html'"></div>
+<!--<div ui-view></div>-->
+
+<!-- compiled JavaScript -->
+<% scripts.forEach( function ( file ) { %>
+<script type="text/javascript" src="<%= file %>"></script>
+<% }); %>
+
+</body>
+</html>

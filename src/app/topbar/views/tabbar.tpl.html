@@ -1,0 +1,30 @@
+<div class="off-canvas-wrap show-for-small" data-offcanvas ng-controller="TopbarCtrl">
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">My Site</h1>
+      </section>
+
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon"><span></span></a>
+      </section>
+    </nav>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Menu</label></li>
+        <li><a ng-click="showAboutPage()">Show About Page</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </aside>
+
+    <section class="main-section">
+      <div ui-view>UI VIew</div>
+    </section>
+
+    <a class="exit-off-canvas"></a>
+
+  </div>
+</div>

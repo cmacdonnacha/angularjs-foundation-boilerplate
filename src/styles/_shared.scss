@@ -1,0 +1,8 @@
+// ** This is where you can put Sass that is used globally across the entire app ** //
+@import "mixins";
+
+//  Class: circle
+//  Description: Used to make a circular element. (e.g Change a square <img> to a circle)
+.circle {
+  @include circle;
+}

@@ -1,0 +1,13 @@
+.DS_Store
+.idea/
+.sass-cache/
+npm-debug.log
+junit-report.xml
+tmp/
+build/
+public/
+production/
+node_modules/
+reports/
+coverage/
+vendor/
