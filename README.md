@@ -6,6 +6,7 @@ A simple and well structured boilerplate project based on AngularJS and Zurb's F
 * Mobile ready
 * SASS support
 * Grunt watch, build and local server tasks
+* Page reload
 * Organised folder structure
 * Minified CSS, HTML and JS build files
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/) icons
@@ -17,7 +18,7 @@ A simple and well structured boilerplate project based on AngularJS and Zurb's F
 * [Protractor](https://angular.github.io/protractor/#/)  end-to-end test framework
 
 ## Live Demo
-To be added...
+[Check out the live demo](http://cmacdonnacha.github.io/angularjs-foundation-boilerplate/)
 
 ## Setup
 1. Install [Git](https://git-scm.com/downloads) and [NodeJS](http://nodejs.org/)
