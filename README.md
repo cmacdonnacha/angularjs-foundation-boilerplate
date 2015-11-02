@@ -87,70 +87,7 @@ By retaining this structure the project is much more manageable as it grows.
     *  `main.scss`: Brings everything together. Contains all of the Sass file imports. It's what tells the app where to grab the styles from.
 
 #### Adding a new component
-As you can see in this boilerpate project we have 6 sample components: `about`, `common`, `home`, `layout`, `sample` and `topbar`. Well, what would you do if you wanted to add your own component? For now, you have to copy and paste a template component called `sample` and manually rename the files and contents, but hopefully I'll automate this process in the future. Anyway, here's how you'd do it:
-
-1. Copy the `sample` folder and paste it into the `app` folder with all the other components.
-2. Rename the folder. Let's call it `contactUs` as an example.
-3. You can delete any sub-folders you don't think you'll use right away (i.e assests, unit, directives etc.). For this example, I'm going to keep all sub-folders.
-4. Expand the `controllers` folder.
-5. Open the `controllers.js` file.
-6. Change all instances of `sample` to `contactUs`. Use title casing for controller names (e.g ContactUsCtrl).
-7. In the `controllers` folder, rename the `SampleCtrl.js` file to `ContactUsCtrl.js`.
-8. Open the `ContactUsCtrl.js` file.
-9. Change all instances of `sample` to `contactUs`.
-10. Expand the `directives` folder
-11. Open the `directives.js` file.
-12. Change all instances of `sample` to `contactUs`.
-13. In the `directives` folder, rename the `sampleDirective.js` file to `contactUsDirective.js`.
-14. Open the `contactUsDirective.js` file.
-15. Change all instances of `sample` to `contactUs`.
-16. Expand the `e2e` folder.
-17. Rename the `sample.e2e.js` file to `contactUs.e2e.js`.
-18. Open the `contactUs.e2e.js` file.
-19. In the first line, change `test sample` to `test contact us`.
-20. Expand the `services` folder.
-21. Open the `services.js` file.
-22. Change all instances of `sample` to `contactUs`. Use title casing for service names (e.g ContactUsService).
-23. In the `services` folder, rename `SampleService.js` to `ContactUsService.js`.
-24. Open the `ContactUsService.js` file.
-25. Change all instances of `sample` to `contactUs`.
-26. Expand the `styles` folder.
-27. Open the `_styles.scss` file.
-28. Change all instances of `sample` to `contactUs`.
-29. In the `styles` folder, rename the `_sample.scss` file to `_contactUs.scss`.
-30. Expand the `unit` folder.
-31. Rename the `SampleCtrl.spec.js` file to `ContactUsCtrl.spec.js`.
-32. Open the `ContactUsCtrl.spec.js` file.
-33. Change all instances of `sample` to `contactUs`.
-34. In the `unit` folder, rename the `SampleService.service.spec.js` file to `ContactUsService.service.spec.js`.
-35. Open the `ContactUsService.service.spec.js` file.
-36. Change all instances of `sample` to `contactUs`.
-37. In the `unit` folder, rename the `SampleCtrl.spec.js` file to `ContactUsCtrl.spec.js`.
-38. Open the `ContactUsCtrl.spec.js` file.
-39. Change all instances of `sample` to `contactUs`.
-40. Expand the `views` folder
-41. Rename the `sample.tpl.html` file to `contactUs.tpl.html`.
-42. Open the `contactUs.tpl.html` file.
-43. Change `ng-controller="SampleCtrl"` to `ng-controller="ContactUsCtrl"`
-44. Rename the `sample.module.js` file to `contactUs.module.js`
-45. Open the `contactUs.modeule.js` file.
-46. Change all instances of `sample` to `contactUs`.
-47. Open the `app.js` file in the main `app` folder.
-48. Add `'app.contactUs'` to the list of component declarations. (Don't forget to add a comma to the end of the last entry, which would be `'app.about'` in this case.
-49. Save all changes.
-50. Stop the `grunt watch` task if it's running.
-51. Run the `grunt clean` task.
-52. Run the `grunt watch` task.
-53. Go to `http://localhost:9000`
-53. Your brand new component is now ready to be used.
-54. To test if it worked go to `topbar > controllers > TopbarCtrl.js`.
-55. Change `$state.go('about');` to `$state.go('contactUs');`
-56. On the topbar, click on the **"Show About Page"** button.
-57. You should see the text **"This is a sample component"**.
-
-**Notes**:
-* Like I said, this is a pretty long winded approach so I'll hopefully automate this process in the future.
-* If you are seeing an AngularJS dependency error in the browser's console then make sure that you've renamed everything from `sample` to `contactUs` and have included `app.contactUs` as a dependency in the `app.js` file.
+As you can see in this boilerpate project we have 6 sample components: `about`, `common`, `home`, `layout`, `sample` and `topbar`. Check out the [wiki](https://github.com/cmacdonnacha/angularjs-foundation-boilerplate/wiki/How-to-add-a-new-component) to see how you can go about adding your very own component. 
 
 ## Making Foundation Styles your own
 Foundation is great because it comes with basic styling, leaving it up to you to give it your very own touch. You can do this by changing the `_settings.scss` file inside the `styles` folder:
@@ -197,7 +134,7 @@ if you don't have Python installed on your machine you will see these errors but
 #### 8. Issue: Bower hangs and cannot fetch the libraries when running `npm install`
 **Suggestion:**
 Set Git global options to fetch components over 'https' instead of 'git' by running the following command:
-*`git config --global url."https://".insteadOf git://`
+`git config --global url."https://".insteadOf git://`
 
 #### 9. Issue: None of the above solutions have helped
 **Suggestion 1:**
