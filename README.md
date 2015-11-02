@@ -170,6 +170,7 @@ This error means that NPM was not able to install one of the node modules to the
 * You have over-zealous anti-virus software installed, and it's blocking file system writes.
 
 **Suggestion:**
+
 1. Run `npm cache clean`.
 2. Run `npm install` again.
 
