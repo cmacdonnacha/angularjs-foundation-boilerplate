@@ -607,7 +607,7 @@ module.exports = function (grunt) {
   ]);
 
   /*
-   * Run E2E tests
+   * Run unit tests
    */
   grunt.registerTask('run:unit', [
     'karmaconfig',
@@ -644,17 +644,22 @@ module.exports = function (grunt) {
    * minifying your code.
    */
   grunt.registerTask('production', [
-    'clean:build', 'clean:compile',
+    'clean:build',
+    'clean:compile',
     'html2js:min',
-    'eslint',
+    'test',
     'sass:compile',
     'concat:build_css',
-    'copy:build_app_assets', 'copy:build_module_assets',
-    'copy:build_appjs', 'copy:build_vendorjs', 'index:build',
-    'karmaconfig', 'karma:continuous',
+    'copy:build_app_assets',
+    'copy:build_module_assets',
+    'copy:build_appjs',
+    'copy:build_vendorjs',
+    'index:build',
     'copy:compile_assets',
     'ngAnnotate',
-    'concat:compile_js', 'uglify', 'index:compile',
+    'concat:compile_js',
+    'uglify',
+    'index:compile',
     'htmlmin:index'
   ]);
 

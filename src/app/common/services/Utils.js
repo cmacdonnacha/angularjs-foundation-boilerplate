@@ -5,7 +5,7 @@ angular.module('common.services.Utils', [])
       isNullOrUndefined: isNullOrUndefined,
       isUndefinedOrWhitespace: isUndefinedOrWhitespace,
       isNullOrWhitespace: isNullOrWhitespace,
-      isNullorUndefinedOrWhitespace: isNullorUndefinedOrWhitespace
+      isNullOrUndefinedOrWhitespace: isNullorUndefinedOrWhitespace
     };
     return utils;
 

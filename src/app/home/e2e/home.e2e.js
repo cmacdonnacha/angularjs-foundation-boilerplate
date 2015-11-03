@@ -4,7 +4,7 @@ describe('test home page', function () {
     browser.get('#/home');
   });
 
-  it('should display the dropdown button', function () {
+  it('should ensure the page title is correct', function () {
    expect(browser.getTitle()).toEqual('AngularJS Foundation Boilerplate');
   });
 });
