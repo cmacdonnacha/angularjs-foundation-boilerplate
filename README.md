@@ -6,7 +6,7 @@ A simple and well structured boilerplate project based on AngularJS and Zurb's F
 * Mobile ready
 * SASS support
 * Grunt watch, build and local server tasks
-* Page reload
+* Live reload
 * Organised folder structure
 * Minified CSS, HTML and JS build files
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/) icons
@@ -47,7 +47,7 @@ A simple and well structured boilerplate project based on AngularJS and Zurb's F
 * `grunt eslint` : Runs an ESLint code check
 
 ## Running unit test reports
-1. `grunt run:reports` : will create and serve the **'reports'** folder
+1. `grunt reports`: will create and serve the **'reports'** folder
 2. Navigate to [`http://localhost:22000/`](http://localhost:22000/)
 
 ## Project Structure
@@ -120,7 +120,7 @@ if you don't have Python installed on your machine you will see these errors but
 **Suggestion:** Make sure you have administrator permissions to delete folders from the directory. If you're still seeing the issue then manually delete the `production` folder and run `grunt production` again.
 
 #### 4. Issue: I'm getting the following error when running the `grunt test` task: ***"No selenium server jar found at the specified location"***
-**Suggestion 1:** Run the following command and try again: `webdriver-manager update`
+**Suggestion:** Run the following command and try again: `webdriver-manager update`
 
 #### 5. Issue: I'm still getting an error when running the `grunt test` task.
 **Suggestion:** Make sure you have Java installed. Close and re-launch the command line and try again.
