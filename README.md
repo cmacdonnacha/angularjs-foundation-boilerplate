@@ -51,7 +51,7 @@ A simple and well structured boilerplate project based on AngularJS and Zurb's F
 2. Navigate to [`http://localhost:22000/`](http://localhost:22000/)
 
 ## Project Structure
-This project follows a **"Folders-by-Feature"** structure. From the folder structure below you can see that there are 6 separate components, a folder for each component.
+This project follows a **"Folders-by-Feature"** structure very simular to [John Papa's Styleguide](https://github.com/johnpapa/angular-styleguide#application-structure). From the folder structure below you can see that there are 6 separate components, a folder for each component.
 Each component is treated as a mini Angular app. This structure allows us developers to easily locate code and identify what each file represents at a glance.
 By retaining this structure the project is much more manageable as it grows.
 
@@ -118,23 +118,35 @@ if you don't have Python installed on your machine you will see these errors but
 
 #### 3. Issue: I'm getting an error when running the `grunt production` task.
 **Suggestion:** Make sure you have administrator permissions to delete folders from the directory. If you're still seeing the issue then manually delete the `production` folder and run `grunt production` again.
+<br>
+<br>
 
 #### 4. Issue: I'm getting the following error when running the `grunt test` task: ***"No selenium server jar found at the specified location"***
 **Suggestion:** Run the following command and try again: `webdriver-manager update`
+<br>
+<br>
 
 #### 5. Issue: I'm still getting an error when running the `grunt test` task.
 **Suggestion:** Make sure you have Java installed. Close and re-launch the command line and try again.
+<br>
+<br>
 
 #### 6. Issue: I'm getting the following error ***"Error: Cannot find module 'stylus'"***
 **Suggestion:** Run the following command: `npm install stylus -g`
+<br>
+<br>
 
 #### 7. Issue: I'm getting the following error when running the `grunt watch` task: ***"Error: 'libsass' bindings" not found. Try reinstalling 'node-sass'***
 **Suggestion:** Run the following command: `npm install grunt-sass`
+<br>
+<br>
 
 #### 8. Issue: Bower hangs and cannot fetch the libraries when running `npm install`
 **Suggestion:**
 Set Git global options to fetch components over 'https' instead of 'git' by running the following command:
 `git config --global url."https://".insteadOf git://`
+<br>
+<br>
 
 #### 9. Issue: None of the above solutions have helped
 **Suggestion 1:**
@@ -155,5 +167,12 @@ If you are running into issues while installing node packages then ensure you ha
 Believe it or not, **angularjs-foundation-boilerplate** is not perfect. If you want to improve it somehow then by all means go ahead and create a pull request :-)
 
 ## Changelog
+### 1.0.1
+**06/11/2015**
+* Updated font awesome icons
+* Reduced size of favicon
+* Updated grunt file
+
 ### 1.0.0
-- 30/10/2015 - Initial release
+**30/10/2015**
+* Initial Release
