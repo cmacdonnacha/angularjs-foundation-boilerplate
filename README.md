@@ -22,7 +22,6 @@ A simple and well structured boilerplate project based on AngularJS and Zurb's F
 
 ## Setup
 1. Install [Git](https://git-scm.com/downloads) and [NodeJS](http://nodejs.org/)
-2. Clone this project: `git clone https://github.com/cmacdonnacha/angularjs-foundation-boilerplate.git`
 2. Install Grunt and Bower globally: `npm install -g grunt-cli bower`
 3. Install Karma globally: `npm install -g karma`
 4. Install PhantomJS headless browser globally: `npm install -g phantomjs`
@@ -33,7 +32,9 @@ A simple and well structured boilerplate project based on AngularJS and Zurb's F
 **NOTE:** If you have previous versions of any of the above packages, it's recommended that you update them: `npm update -g`
 
 ## Install Project Dependencies
-1. `npm install` - this installs both the required NodeJS modules and the bower component libraries.
+1. `git clone https://github.com/cmacdonnacha/angularjs-foundation-boilerplate.git myApp`
+2.  `cd myApp`
+3. `npm install` - this installs both the required NodeJS modules and the bower component libraries.
 
 **IMPORTANT:** If you run into any issues please have a look at the **"Troubleshooting"** section at the bottom of this page.
 
@@ -51,7 +52,7 @@ A simple and well structured boilerplate project based on AngularJS and Zurb's F
 2. Navigate to [`http://localhost:22000/`](http://localhost:22000/)
 
 ## Project Structure
-This project follows a **"Folders-by-Feature"** structure very simular to [John Papa's Styleguide](https://github.com/johnpapa/angular-styleguide#application-structure). From the folder structure below you can see that there are 6 separate components, a folder for each component.
+This project follows a **"Folders-by-Feature"** structure very similar to [John Papa's Styleguide](https://github.com/johnpapa/angular-styleguide#application-structure). From the folder structure below you can see that there are 6 separate components, a folder for each one.
 Each component is treated as a mini Angular app. This structure allows us developers to easily locate code and identify what each file represents at a glance.
 By retaining this structure the project is much more manageable as it grows.
 
